@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה | ספר ילדים על זהות וביטחון עצמי</title>
+    <meta name="description" content="ספר ילדים עם מסר עמוק על זהות, ביטחון עצמי ואהבה עצמית. סיפור עדין ומעצים על אריה צעיר שיוצא לטיול ביער ומגלה את עצמו מחדש.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Assistant', 'Heebo', 'Rubik', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+            background: #FAF7F2;
+            color: #5A4A3A;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #FAF7F2;
+            padding: 40px 20px 0;
+            text-align: center;
+        }
+
+        .book-cover-hero {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .book-cover-hero img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(107, 142, 111, 0.2);
+        }
+
+        .hero-tagline {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #4A7C59;
+            font-weight: 600;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+        }
+
+        /* Hero Content Section */
+        .hero-content-section {
+            background: linear-gradient(135deg, #F5F2ED 0%, #EBF3E8 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-content-section h1 {
+            font-size: 2rem;
+            color: #4A7C59;
+            margin-bottom: 25px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .hero-content-section .book-title {
+            font-size: 1.8rem;
+            color: #6F4E37;
+            margin: 30px 0;
+            font-weight: 600;
+        }
+
+        .hero-content-section .description {
+            font-size: 1.1rem;
+            color: #5A4A3A;
+            margin: 20px 0 40px;
+            font-weight: 400;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD700 0%, #FFC107 50%, #FFB300 100%);
+            color: #2A1F10;
+            padding: 18px 45px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 215, 0, 0.3);
+            animation: pulse 2s infinite;
+            border: 2px solid #FFD700;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 10px 35px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.4);
+            background: linear-gradient(135deg, #FFE55C 0%, #FFD700 50%, #FFC107 100%);
+        }
+
+        .cta-button.secondary {
+            background: linear-gradient(135deg, #5DD9C1 0%, #48C9B0 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(72, 201, 176, 0.3);
+            animation: none;
+            border: 2px solid #48C9B0;
+        }
+
+        .cta-button.secondary:hover {
+            background: linear-gradient(135deg, #6FE5CD 0%, #5DD9C1 100%);
+            box-shadow: 0 6px 20px rgba(72, 201, 176, 0.4);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 215, 0, 0.3);
+            }
+            50% {
+                box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5), 0 0 25px rgba(255, 215, 0, 0.4);
+            }
+            100% {
+                box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 215, 0, 0.3);
+            }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #4A7C59;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            color: #6F4E37;
+            margin: 25px 0 15px;
+            font-weight: 600;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #5A4A3A;
+        }
+
+        section strong {
+            color: #4A7C59;
+            font-weight: 600;
+        }
+
+        /* About Section */
+        .about-section {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background: #F5F2ED;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 2px solid #48C9B0;
+            box-shadow: 0 3px 12px rgba(72, 201, 176, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 18px rgba(72, 201, 176, 0.15);
+        }
+
+        .benefit-card h3 {
+            color: #4A7C59;
+            margin: 0 0 10px 0;
+            font-size: 1rem;
+        }
+
+        .benefit-card p {
+            font-size: 0.95rem;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* What Kids Learn Section */
+        .kids-learn-section {
+            background: white;
+        }
+
+        .learn-list {
+            max-width: 800px;
+            margin: 30px auto;
+            text-align: right;
+        }
+
+        .learn-item {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border-right: 2px solid #48C9B0;
+            box-shadow: 0 2px 10px rgba(72, 201, 176, 0.08);
+        }
+
+        .learn-item p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Who Section */
+        .who-section {
+            background: #EBF3E8;
+        }
+
+        .who-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .who-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(72, 201, 176, 0.1);
+            border-top: 2px solid #48C9B0;
+        }
+
+        .who-card .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        /* Author Section */
+        .author-section {
+            background: white;
+            text-align: center;
+        }
+
+        .author-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .author-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 30px auto;
+            box-shadow: 0 8px 25px rgba(74, 124, 89, 0.2);
+        }
+
+        .author-photo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Price Section */
+        .price-section {
+            background: linear-gradient(135deg, #F5F2ED 0%, #EBF3E8 100%);
+            text-align: center;
+        }
+
+        .price-box {
+            background: white;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 8px 30px rgba(74, 124, 89, 0.15);
+        }
+
+        .price-main {
+            font-size: 2.5rem;
+            color: #4A7C59;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        .price-original {
+            font-size: 1.3rem;
+            color: #999;
+            text-decoration: line-through;
+            margin-bottom: 15px;
+        }
+
+        .price-label {
+            background: #D4AF37;
+            color: white;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .shipping-info {
+            background: #F5F2ED;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        .limited {
+            color: #D4AF37;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        /* Kindergarten Section */
+        .kindergarten-section {
+            background: white;
+        }
+
+        .kindergarten-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #EBF3E8;
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(107, 142, 111, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #5A4A3A;
+            color: #FAF7F2;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        footer h3 {
+            color: #D4AF37;
+            margin-bottom: 25px;
+        }
+
+        footer a {
+            color: #D4AF37;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            color: #FAF7F2;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            .hero-tagline {
+                font-size: 1.3rem;
+            }
+
+            .hero-content-section h1 {
+                font-size: 1.6rem;
+            }
+
+            .hero-content-section .book-title {
+                font-size: 1.5rem;
+            }
+
+            .hero-content-section .description {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 16px 35px;
+                font-size: 1.1rem;
+                margin: 10px 5px;
+            }
+
+            section h2 {
+                font-size: 1.7rem;
+            }
+
+            section h3 {
+                font-size: 1.3rem;
+            }
+
+            section p {
+                font-size: 0.95rem;
+            }
+
+            .price-main {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="book-cover-hero">
+                <img src="hero-cover.png" alt="כריכת ספר האריה שידע שהוא אריה">
+                <div class="hero-tagline">מסע קטן ביער<br>שפותח מסע גדול בלב</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Below Image -->
+    <section class="hero-content-section">
+        <div class="container">
+            <h1>ספר ילדים עם מסר עמוק<br>על זהות, ביטחון עצמי ואהבה עצמית</h1>
+            
+            <div class="book-title">הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה</div>
+            
+            <p class="description">סיפור עדין ומעצים על אריה צעיר<br>שיוצא לטיול ביער – ומגלה את עצמו מחדש</p>
+            
+            <a href="#order" class="cta-button">📚 להזמנת הספר במחיר השקה</a>
+        </div>
+    </section>
+
+    <!-- About the Book -->
+    <section class="about-section">
+        <div class="container">
+            <h2>📖 על הספר</h2>
+            <div class="about-content">
+                <h3>הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה</h3>
+                <p><strong>הוא סיפור עדין ומעצים על זהות עצמית.</strong></p>
+                
+                <p>אריה צעיר יוצא לטיול ביער.<br>
+                מפגש עם חיות אחרות גורם לו לפקפק במי שהוא יודע שהוא,<br>
+                ומוביל אותו למסע פנימי של הקשבה, גילוי והתחזקות.</p>
+                
+                <p><strong>זהו סיפור שמראה לילדים<br>
+                שהדרך להבין מי אנחנו באמת<br>
+                עוברת דרך הלב – ולא דרך עיני הסביבה.</strong></p>
+            </div>
+
+            <div style="text-align: center; margin: 40px 0;">
+                <a href="activities.html" class="cta-button secondary">🎨 פעילויות והעשרה</a>
+            </div>
+
+            <div class="gallery">
+                <img src="image1.jpg" alt="איור מהספר - אריה ביער">
+                <img src="image2.jpg" alt="איור מהספר - אריה עם חיות">
+                <img src="image3.jpg" alt="איור מהספר - אריה מגלה את עצמו">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Important -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2>✨ למה כדאי לקרוא את הספר?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>💪 מחזק את הביטחון העצמי של הילדים</h3>
+                </div>
+                <div class="benefit-card">
+                    <h3>👂 מלמד להקשיב ללב ולא רק לסביבה</h3>
+                </div>
+                <div class="benefit-card">
+                    <h3>🤝 עוזר להתמודד עם מילים מבחוץ</h3>
+                </div>
+                <div class="benefit-card">
+                    <h3>💬 פותח שיחה רגשית עם הילדים</h3>
+                </div>
+                <div class="benefit-card">
+                    <h3>🏡 מושלם לקריאה משפחתית ובגן</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Kids Learn -->
+    <section class="kids-learn-section">
+        <div class="container">
+            <h2>🌟 מה ילדים לוקחים מהסיפור?</h2>
+            <div class="learn-list">
+                <div class="learn-item">
+                    <p><strong>להבין שדברים שאחרים אומרים עליהם - הם לא בהכרח מעידים על האמת לגביהם</strong></p>
+                </div>
+                
+                <div class="learn-item">
+                    <p><strong>ללמוד שכל אחד רואה את העולם דרך העיניים שלו והעולם הוא כמו המראה למה שאנחנו חושבים על עצמנו</strong></p>
+                </div>
+                
+                <div class="learn-item">
+                    <p><strong>לראות ולהביט בעצמם באהבה ובקבלה</strong></p>
+                </div>
+                
+                <div class="learn-item">
+                    <p><strong>לפתח הקשבה פנימית ודיבור אוהב כלפי עצמם</strong></p>
+                </div>
+                
+                <div class="learn-item">
+                    <p><strong>להכיר בכוח הפנימי שטמון בהם, דרך התבוננות דרך עיניהם במבט פנימה וחיבור לרגשותיהם</strong></p>
+                </div>
+                
+                <div class="learn-item">
+                    <p><strong>לקבל לגיטימציה לבלבול, לרגשות ולשאלות שעולות בעקבות דברים שנאמרים מבחוץ</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is It For -->
+    <section class="who-section">
+        <div class="container">
+            <h2>💝 למי הספר מתאים?</h2>
+            <div class="who-grid">
+                <div class="who-card">
+                    <div class="icon">👶</div>
+                    <p><strong>ילדים בגילאי<br>4 ומעלה</strong></p>
+                </div>
+                <div class="who-card">
+                    <div class="icon">👨‍👩‍👧</div>
+                    <p><strong>הורים שמבקשים<br>לחזק את עולמו<br>הרגשי של הילד</strong></p>
+                </div>
+                <div class="who-card">
+                    <div class="icon">🧸</div>
+                    <p><strong>גננות<br>ואנשי חינוך</strong></p>
+                </div>
+                <div class="who-card">
+                    <div class="icon">🎁</div>
+                    <p><strong>מתנה עם<br>משמעות אמיתית</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Author -->
+    <section class="author-section">
+        <div class="container">
+            <h2>✍️ על המחברת</h2>
+            <div class="author-content">
+                <div class="author-photo">
+                    <img src="author-circle.png" alt="תמונת המחברת רוני קמפיאס">
+                </div>
+                
+                <p><strong>הספר נכתב מתוך התמודדות אישית מחזקת<br>
+                ומתוך רצון עמוק לעזור לילדים להתמודד עם אתגרים רגשיים וחברתיים.</strong></p>
+                
+                <p>זהו סיפור שמזמין ילדים – וגם הורים –<br>
+                להביט בעצמם באור חדש,<br>
+                מחזק ומעצים,<br>
+                וליצור בתוכם ובסביבתם עולם מאיר וטוב.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price & Order -->
+    <section id="order" class="price-section">
+        <div class="container">
+            <h2>💳 מחיר ומשלוח</h2>
+            <div class="price-box">
+                <div class="price-label">🎉 מחיר השקה מיוחד!</div>
+                
+                <div class="price-main">💳 להזמנת הספר במחיר השקה מיוחד 55 ₪</div>
+                <div class="price-original">78 ₪</div>
+                
+                <div class="shipping-info">
+                    <p><strong>📦 משלוח בדואר רשום – עד 8 ספרים בתוספת 23 ₪</strong></p>
+                    <p>לרכישה קבוצתית (מעל 8 ספרים) – יצירת קשר בוואטסאפ</p>
+                </div>
+                
+                <p class="limited">⚡ מוגבל ל-500 ראשונים!</p>
+                
+                <a href="https://pay.grow.link/086991300a1ce6010c120d10d41c5567-MjkzOTA5NQ" class="cta-button" target="_blank" rel="noopener noreferrer">🛒 להזמנה עכשיו</a>
+                
+                <div style="margin-top: 30px;">
+                    <p style="margin-bottom: 15px;">או סרקו את הקוד:</p>
+                    <img src="qr-code.png" alt="QR Code להזמנת הספר" style="max-width: 200px; border-radius: 15px;">
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <a href="https://wa.me/972526989361" target="_blank" class="cta-button secondary" style="font-size: 1.2rem;">
+                        💬 הזמנה קבוצתית בוואטסאפ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kindergarten -->
+    <section class="kindergarten-section">
+        <div class="container">
+            <h2>🧸 מתאים גם לגני ילדים</h2>
+            <div class="kindergarten-content">
+                <p><strong>הספר "הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה"<br>
+                עוסק בזהות, ביטחון עצמי והיכולת של הילד<br>
+                לזהות את עצמו מבפנים – ולא רק דרך עיני הסביבה.</strong></p>
+                
+                <p>באמצעות סיפור פשוט ונגיש,<br>
+                הילדים נחשפים להתמודדות החברתית עם מילים שנאמרות מבחוץ,<br>
+                כאלה שעלולות לעורר בלב בלבול, ספק והשוואה.</p>
+                
+                <p>הסיפור מזמין את הילדים להתבונן פנימה,<br>
+                להקשיב ללבם וללמוד על קבלה עצמית וערך עצמי.</p>
+                
+                <p><strong>הספר מהווה כלי מצוין לשיח רגשי בגן,<br>
+                לעבודה קבוצתית, לפיתוח שפה רגשית<br>
+                ולעידוד הקשבה, אמפתיה וביטוי אישי.</strong></p>
+                
+                <p style="margin-top: 30px;"><strong>מתאים לגילאי 4 ומעלה.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3>📞 צרו קשר</h3>
+            <div class="contact-info">
+                <p>📱 נייד/וואטסאפ: <a href="tel:052-6989361">052-698-9361</a></p>
+                <p>📧 דוא"ל: <a href="/cdn-cgi/l/email-protection#6e020701000c0101055c5e5c5a2e09030f0702400d0103"><span class="__cf_email__" data-cfemail="c7abaea8a9a5a8a8acf5f7f5f387a0aaa6aeabe9a4a8aa">[email&#160;protected]</span></a></p>
+            </div>
+            
+            <p style="margin-top: 40px; color: #FAF7F2;">© 2025 רוני קמפיאס | כל הזכויות שמורות</p>
+            <p style="color: #FAF7F2; margin-top: 10px;">איורים: אנאקשי גווסאמי וניאן בוס</p>
+            
+            <p style="margin-top: 20px;">
+                <a href="privacy-policy.html" style="color: #D4AF37;">🔒 מדיניות פרטיות</a>
+            </p>
+            
+            <p style="color: #FAF7F2; margin-top: 20px; font-size: 0.9rem;">
+                ♿ הצהרת נגישות: אנו עושים מאמצים להנגיש את האתר לאנשים עם מוגבלות
