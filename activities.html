@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>פעילויות והעשרה | הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה</title>
-    
+    <title>הצהרת נגישות - האריה שידע שהוא אריה</title>
     <style>
         * {
             margin: 0;
@@ -13,319 +12,124 @@
         }
 
         body {
-            font-family: 'Assistant', 'Heebo', 'Rubik', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-            background: #FAF7F2;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #FAF7F2 0%, #EBF3E8 100%);
             color: #5A4A3A;
             line-height: 1.8;
-            font-size: 18px;
+            padding: 40px 20px;
         }
 
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #F5F2ED 0%, #EBF3E8 100%);
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            color: #6B8E6F;
-            margin-bottom: 20px;
-        }
-
-        .back-button {
-            display: inline-block;
-            background: #8BA888;
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            margin-top: 15px;
-            font-weight: 600;
-        }
-
-        .back-button:hover {
-            background: #6B8E6F;
-        }
-
-        /* Intro Section */
-        .intro-section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .quote-box {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            max-width: 700px;
-            margin: 0 auto 40px;
-            box-shadow: 0 4px 15px rgba(107, 142, 111, 0.1);
-            border-right: 5px solid #B8964F;
-        }
-
-        .quote-box p {
-            font-size: 1.4rem;
-            font-style: italic;
-            color: #2D5A3D;
-            margin-bottom: 10px;
-            font-weight: 600;
-            line-height: 1.8;
-        }
-
-        .intro-text {
             max-width: 800px;
-            margin: 20px auto;
-            font-size: 1.15rem;
-            line-height: 1.9;
-        }
-
-        /* Activities Grid */
-        .activities-section {
-            padding: 60px 20px;
+            margin: 0 auto;
             background: white;
-        }
-
-        .activities-section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #6B8E6F;
-            margin-bottom: 50px;
-        }
-
-        .activities-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .activity-card {
-            background: #F5F2ED;
-            padding: 35px;
+            padding: 50px;
             border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(107, 142, 111, 0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
         }
 
-        .activity-card:hover {
-            transform: translateY(-5px);
+        h1 {
+            color: #4A7C59;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
         }
 
-        .activity-card.green {
-            border-right: 6px solid #6B8E6F;
+        h2 {
+            color: #6F4E37;
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
         }
 
-        .activity-card.yellow {
-            border-right: 6px solid #B8964F;
-        }
-
-        .activity-card.brown {
-            border-right: 6px solid #8B7355;
-        }
-
-        .activity-icon {
-            font-size: 3rem;
+        p {
             margin-bottom: 20px;
-        }
-
-        .activity-card h3 {
-            color: #6B8E6F;
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-        }
-
-        .activity-card p {
             font-size: 1.1rem;
-            line-height: 1.8;
-            margin: 10px 0;
-            color: #5A4A3A;
         }
 
-        .activity-card em {
-            color: #8B7355;
-            font-style: italic;
+        ul {
+            margin: 20px 0 20px 30px;
         }
 
-        /* Add Content Section */
-        .add-content-section {
-            padding: 60px 20px;
+        li {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        .contact-box {
             background: #EBF3E8;
-            text-align: center;
-        }
-
-        .add-content-section h2 {
-            color: #6B8E6F;
-            margin-bottom: 20px;
-        }
-
-        .add-content-section p {
-            font-size: 1.15rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-
-        .edit-note {
-            background: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 15px;
-            max-width: 600px;
-            margin: 30px auto;
-            border: 2px dashed #B8964F;
+            margin: 30px 0;
+            border-right: 4px solid #4A7C59;
         }
 
-        .edit-note p {
-            color: #8B7355;
-            font-weight: 600;
-        }
-
-        /* Footer */
-        footer {
-            background: #5A4A3A;
-            color: #FAF7F2;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        footer a {
-            color: #C9A959;
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #D4AF37;
             text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
-            .header h1 {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
                 font-size: 2rem;
             }
 
-            .activities-grid {
-                grid-template-columns: 1fr;
+            h2 {
+                font-size: 1.5rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="header">
-        <div class="container">
-            <h1>🎨 פעילויות והעשרה למשפחה</h1>
-            <p style="font-size: 1.3rem; color: #6B8E6F; margin-top: 15px;">הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה</p>
-            <a href="index.html" class="back-button">← חזרה לעמוד הראשי</a>
+<main role="main">
+    <div class="container">
+        <h1>♿ הצהרת נגישות</h1>
+        
+        <p><strong>האתר "הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה" נועד להיות נגיש לכלל המשתמשים, כולל אנשים עם מוגבלויות.</strong></p>
+        
+        <p>אנו משקיעים מאמצים רבים על מנת להנגיש את האתר ולאפשר חוויית גלישה נוחה, ברורה ושוויונית ככל האפשר, בהתאם להוראות חוק שוויון זכויות לאנשים עם מוגבלות ולתקן הישראלי ת״י 5568, המבוסס על הנחיות WCAG 2.0 ברמה AA.</p>
+
+        <h2>מה בוצע באתר</h2>
+        <ul>
+            <li>מבנה תוכן ברור והיררכי</li>
+            <li>שימוש בכותרות תקניות</li>
+            <li>טקסטים קריאים עם ניגודיות מתאימה</li>
+            <li>התאמה לניווט באמצעות מקלדת</li>
+            <li>הוספת טקסט חלופי (alt) לתמונות</li>
+            <li>התאמה לשימוש בטכנולוגיות מסייעות</li>
+            <li>כפתור נגישות חכם להתאמה אישית</li>
+        </ul>
+
+        <h2>ייתכנו מגבלות נגישות</h2>
+        <p>למרות מאמצינו, ייתכן ויתגלו רכיבים מסוימים שאינם נגישים באופן מלא. אנו מתחייבים להמשיך ולשפר את נגישות האתר ככל שניתן.</p>
+
+        <h2>יצירת קשר בנושא נגישות</h2>
+        <div class="contact-box">
+            <p><strong>אם נתקלתם בקושי כלשהו בגלישה באתר, או שיש לכם הערה או בקשה בנושא נגישות – נשמח שתפנו אלינו:</strong></p>
+            <p>📧 <strong>דוא״ל:</strong> <a href="mailto:lionbook2024@gmail.com">lionbook2024@gmail.com</a></p>
+            <p>📱 <strong>טלפון / וואטסאפ:</strong> <a href="tel:052-698-9361">052-698-9361</a></p>
+            <p>נשתדל לתת מענה בהקדם האפשרי.</p>
         </div>
+
+        <p style="text-align: center; margin-top: 40px; color: #6F4E37; font-size: 0.95rem;">
+            <strong>עודכן לאחרונה: ינואר 2026</strong>
+        </p>
+
+        <a href="index.html" class="back-link">← חזרה לדף הראשי</a>
     </div>
+</main>
 
-    <!-- Intro -->
-    <section class="intro-section">
-        <div class="container">
-            <div class="quote-box">
-                <p>"מַה שֶׁאַתָּה רוֹאֶה בַּאֲחֵרִים, הוּא לְעִתִּים הַשְׁתַּקְפוּת שֶׁל מַה שֶׁקַּיָּים בְּתוֹכְךָ"</p>
-                <p style="text-align: left; font-size: 1.1rem; margin-top: 15px; color: #6B8E6F;">— קארל יונג</p>
-            </div>
-            
-            <div class="intro-text">
-                <p>כשאנחנו מקשיבים למה שאחרים אומרים עלינו, זה לא בהכרח אומר משהו עלינו עצמנו. לעיתים, זה רק משקף את הדרך שבה הם מרגישים כלפי עצמם או איך הם רואים את הדברים.</p>
-                
-                <p><strong>כאשר אנחנו אוהבים את עצמנו באמת, אנחנו יכולים לזהות את החוזקות שלנו ואת האמת שלנו בעולם.</strong></p>
-                
-                <p style="margin-top: 40px; font-size: 1.3rem; color: #6B8E6F;"><strong>הנה פעילויות מעשיות ללמוד וליישם את המסר של הספר:</strong></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Activities -->
-    <section class="activities-section">
-        <div class="container">
-            <h2>💚 פעילויות מעשרות</h2>
-            
-            <div class="activities-grid">
-                <!-- Activity 1 -->
-                <div class="activity-card green">
-                    <div class="activity-icon">💚</div>
-                    <h3>מחמאות הדדיות</h3>
-                    <p>כל חבר במשפחה או הקבוצה, יתן לעצמו מחמאה ואז יעניק מחמאה לאחד מחברי המשפחה/הקבוצה.</p>
-                    <p><em>לדוגמא: "אני טוב בריקוד, ואתה חבר נאמן".</em></p>
-                </div>
-
-                <!-- Activity 2 -->
-                <div class="activity-card yellow">
-                    <div class="activity-icon">🪞</div>
-                    <h3>שאלה פתוחה - אפקט המראה</h3>
-                    <p>לשאול שאלה פתוחה: "האם קרה לך, שמישהו עשה משהו טוב שגרם לך להרגיש שגם אתה רוצה להיות טוב כלפיו? מה זה גרם לך להרגיש?"</p>
-                    <p><em>זו בדיוק ה"מראה".</em></p>
-                </div>
-
-                <!-- Activity 3 -->
-                <div class="activity-card brown">
-                    <div class="activity-icon">🎭</div>
-                    <h3>משחק תפקידים</h3>
-                    <p>להחליף תפקידים בסיפור – מה הייתם עושים במקום האריה? מה הייתם אומרים לו?</p>
-                </div>
-
-                <!-- Activity 4 -->
-                <div class="activity-card green">
-                    <div class="activity-icon">🖍️</div>
-                    <h3>ציור או מכתב</h3>
-                    <p>לצייר או לכתוב מכתב לעצמנו: "מה אני אוהב בעצמי?"</p>
-                </div>
-
-                <!-- Activity 5 -->
-                <div class="activity-card yellow">
-                    <div class="activity-icon">✨</div>
-                    <h3>"אני חזק כי..."</h3>
-                    <p>למלא ביחד משפט: "אני חזק/ה כי..." והגדרת כוח אחד (לפחות) שיש לי בתוכי.</p>
-                </div>
-
-                <!-- Activity 6 -->
-                <div class="activity-card brown">
-                    <div class="activity-icon">🌟</div>
-                    <h3>טקס יומי של הוקרה</h3>
-                    <p>כל ערב, לשתף דבר אחד שאהבתי בעצמי היום. זו הרגל חיובי לכל המשפחה.</p>
-                </div>
-
-                <!-- Activity 7 -->
-                <div class="activity-card green">
-                    <div class="activity-icon">🎨</div>
-                    <h3>יצירת "מגן עוצמה"</h3>
-                    <p>כל ילד יוצר מגן אישי (ציור/קולאז') עם סמלים של התכונות והכוחות שלו.</p>
-                </div>
-
-                <!-- Activity 8 -->
-                <div class="activity-card yellow">
-                    <div class="activity-icon">🎤</div>
-                    <h3>שיר או שיר עצמי</h3>
-                    <p>ליצור שיר קצר על "מי אני" – אפשר לשיר ביחד, לכתוב ולקרוא.</p>
-                </div>
-
-                <!-- Activity 9 -->
-                <div class="activity-card brown">
-                    <div class="activity-icon">💭</div>
-                    <h3>שיחה פתוחה</h3>
-                    <p>לשאול: "מה את/ה מרגיש/ה כשמישהו אומר לך משהו שלא נכון עליך?" ולשוחח על זה.</p>
-                </div>
-
-                <!-- Activity 10 -->
-                <div class="activity-card green">
-                    <div class="activity-icon">📖</div>
-                    <h3>"ספר הכוחות שלי"</h3>
-                    <p>כל ילד יוצר ספר קטן - בכל עמוד: כוח/תכונה אחרת שלו עם ציור. ספר אישי שמזכיר לו כל הזמן כמה הוא מיוחד!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Add Your Content -->
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p style="margin: 20px 0;">📞 לשאלות: <a href="tel:052-6989361">052-698-9361</a> | 
-            📧 <a href="/cdn-cgi/l/email-protection#e18d888e8f838e8e8ad3d1d3d5a1868c80888dcf828e8c"><span class="__cf_email__" data-cfemail="49252026272b2626227b797b7d092e24282025672a2624">[email&#160;protected]</span></a></p>
-            
-            <p style="margin-top: 20px;">© 2025 רוני קמפיאס | כל הזכויות שמורות</p>
-            
-            <p style="margin-top: 15px;">
+</body>
+</html>
