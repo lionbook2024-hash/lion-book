@@ -488,6 +488,62 @@
                 font-size: 2rem;
             }
         }
+
+        /* Sticky Order Button */
+        .sticky-order-btn {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #FFD700 0%, #FFC107 50%, #FFB300 100%);
+            padding: 15px 20px;
+            text-align: center;
+            z-index: 9997;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+            animation: slideUp 0.5s ease;
+            border-top: 3px solid #D4AF37;
+        }
+
+        .sticky-order-btn a {
+            display: inline-block;
+            color: #2A1F10;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 12px 40px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .sticky-order-btn a:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Hide sticky button on mobile when accessibility button might overlap */
+        @media (max-width: 768px) {
+            .sticky-order-btn {
+                padding: 12px 15px;
+            }
+            
+            .sticky-order-btn a {
+                font-size: 1.1rem;
+                padding: 10px 30px;
+            }
+        }
     </style>
     
     <script>
@@ -816,6 +872,11 @@
             </p>
         </div>
     </footer>
+
+    <!-- Sticky Order Button -->
+    <div class="sticky-order-btn">
+        <a href="#order" aria-label="להזמנת הספר במחיר השקה">📚 להזמנת הספר - מחיר השקה מיוחד!</a>
+    </div>
 
     <!-- UserWay Accessibility Widget -->
     <script>
