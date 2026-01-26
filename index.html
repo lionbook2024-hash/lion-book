@@ -489,59 +489,59 @@
             }
         }
 
-        /* Sticky Order Button */
+        /* Sticky Order Button - Small Side Button */
         .sticky-order-btn {
             position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            bottom: 100px;
+            right: 20px;
             background: linear-gradient(135deg, #FFD700 0%, #FFC107 50%, #FFB300 100%);
-            padding: 15px 20px;
-            text-align: center;
+            padding: 12px 20px;
             z-index: 9997;
-            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
-            animation: slideUp 0.5s ease;
-            border-top: 3px solid #D4AF37;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            border: 2px solid #D4AF37;
+            animation: slideIn 0.5s ease;
+            max-width: 180px;
         }
 
         .sticky-order-btn a {
-            display: inline-block;
+            display: block;
             color: #2A1F10;
-            font-size: 1.3rem;
+            font-size: 0.95rem;
             font-weight: 700;
             text-decoration: none;
-            padding: 12px 40px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            border: 2px solid rgba(255, 255, 255, 0.5);
+            text-align: center;
+            line-height: 1.3;
         }
 
-        .sticky-order-btn a:hover {
-            background: rgba(255, 255, 255, 0.5);
+        .sticky-order-btn:hover {
             transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+            transition: all 0.3s ease;
         }
 
-        @keyframes slideUp {
+        @keyframes slideIn {
             from {
-                transform: translateY(100%);
+                transform: translateX(100%);
                 opacity: 0;
             }
             to {
-                transform: translateY(0);
+                transform: translateX(0);
                 opacity: 1;
             }
         }
 
-        /* Hide sticky button on mobile when accessibility button might overlap */
+        /* Responsive adjustments */
         @media (max-width: 768px) {
             .sticky-order-btn {
-                padding: 12px 15px;
+                bottom: 80px;
+                right: 10px;
+                padding: 10px 15px;
+                max-width: 140px;
             }
             
             .sticky-order-btn a {
-                font-size: 1.1rem;
-                padding: 10px 30px;
+                font-size: 0.85rem;
             }
         }
     </style>
@@ -875,7 +875,7 @@
 
     <!-- Sticky Order Button -->
     <div class="sticky-order-btn">
-        <a href="#order" aria-label="להזמנת הספר במחיר השקה">📚 להזמנת הספר - מחיר השקה מיוחד!</a>
+        <a href="#order" aria-label="להזמנת הספר במחיר השקה">📚<br>הזמינו<br>עכשיו!</a>
     </div>
 
     <!-- UserWay Accessibility Widget -->
@@ -890,10 +890,8 @@ s.setAttribute("src", "https://cdn.userway.org/widget.js");
 <noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
 
 <!-- Accessibility Button (Custom) -->
-<button id="accessibility-btn" aria-label="תפריט נגישות" style="position: fixed; bottom: 20px; left: 20px; width: 60px; height: 60px; border-radius: 50%; background: #0066CC; border: 3px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: pointer; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
-        <path d="M12 2C10.9 2 10 2.9 10 4S10.9 6 12 6 14 5.1 14 4 13.1 2 12 2M16.5 11C17.33 11 18 10.33 18 9.5S17.33 8 16.5 8 15 8.67 15 9.5 15.67 11 16.5 11M7.5 11C8.33 11 9 10.33 9 9.5S8.33 8 7.5 8 6 8.67 6 9.5 6.67 11 7.5 11M21.17 15.5C20.97 15.5 20.75 15.55 20.55 15.65L17 17.69V11C17 8.24 14.76 6 12 6S7 8.24 7 11V17.69L3.45 15.65C3.25 15.55 3.03 15.5 2.83 15.5C2.09 15.5 1.5 16.09 1.5 16.83C1.5 17.23 1.67 17.6 1.97 17.85L7 21.41V23H17V21.41L22.03 17.85C22.33 17.6 22.5 17.23 22.5 16.83C22.5 16.09 21.91 15.5 21.17 15.5Z"/>
-    </svg>
+<button id="accessibility-btn" aria-label="תפריט נגישות" style="position: fixed; bottom: 20px; left: 20px; width: 60px; height: 60px; border-radius: 50%; background: white; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: pointer; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; padding: 0; overflow: hidden;">
+    <img src="accessibility-icon.png" alt="נגישות" style="width: 100%; height: 100%; object-fit: cover;">
 </button>
 
 <div id="accessibility-menu" style="display: none; position: fixed; bottom: 90px; left: 20px; background: white; border-radius: 15px; padding: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.2); z-index: 9998; min-width: 250px; direction: rtl;">
