@@ -804,6 +804,10 @@
                 
                 <a href="https://pay.grow.link/086991300a1ce6010c120d10d41c5567-MjkzOTA5NQ" class="cta-button" target="_blank" rel="noopener noreferrer" aria-label="להזמנת הספר - נפתח בחלון חדש">📚 להזמנת הספר <span style="font-size: 0.8em;">↗</span></a>
                 
+                <p style="margin-top: 15px; color: #4A7C59; font-size: 1rem; font-weight: 600;">
+                    🔒 אתר מאובטח | תשלום בכרטיס אשראי
+                </p>
+                
                 <div style="margin-top: 30px;">
                     <p style="margin-bottom: 15px;">או סרקו את הקוד:</p>
                     <img src="qr-code.png" alt="QR Code להזמנת הספר במחיר השקה" style="max-width: 200px; border-radius: 15px;">
@@ -876,119 +880,21 @@
     <!-- Sticky Order Button -->
     <div class="sticky-order-btn">
         <a href="#order" aria-label="להזמנת הספר במחיר השקה">📚<br>הזמינו<br>עכשיו!</a>
+        <div style="font-size: 0.75rem; color: #2A1F10; margin-top: 8px; text-align: center; line-height: 1.3;">
+            🔒 אתר מאובטח<br>תשלום בכרטיס אשראי
+        </div>
     </div>
 
-    <!-- Accessibility Button (Custom) -->
-<button id="accessibility-btn" aria-label="תפריט נגישות" style="position: fixed; bottom: 20px; left: 20px; width: 60px; height: 60px; border-radius: 50%; background: white; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: pointer; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; padding: 0; overflow: hidden;">
-    <img src="accessibility-icon.png" alt="נגישות" style="width: 100%; height: 100%; object-fit: cover;">
-</button>
-
-<div id="accessibility-menu" style="display: none; position: fixed; bottom: 90px; left: 20px; background: white; border-radius: 15px; padding: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.2); z-index: 9998; min-width: 250px; direction: rtl;">
-    <h3 style="margin: 0 0 15px 0; color: #0066CC; font-size: 1.2rem;">הגדרות נגישות</h3>
-    <button onclick="increaseFontSize()" style="display: block; width: 100%; padding: 12px; margin: 5px 0; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer; text-align: right; font-size: 1rem;">🔍 הגדל טקסט</button>
-    <button onclick="decreaseFontSize()" style="display: block; width: 100%; padding: 12px; margin: 5px 0; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer; text-align: right; font-size: 1rem;">🔍 הקטן טקסט</button>
-    <button onclick="toggleHighContrast()" style="display: block; width: 100%; padding: 12px; margin: 5px 0; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer; text-align: right; font-size: 1rem;">◐ ניגודיות גבוהה</button>
-    <button onclick="toggleGrayscale()" style="display: block; width: 100%; padding: 12px; margin: 5px 0; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer; text-align: right; font-size: 1rem;">⚫ גווני אפור</button>
-    <button onclick="resetAccessibility()" style="display: block; width: 100%; padding: 12px; margin: 5px 0; background: #ffebee; border: none; border-radius: 8px; cursor: pointer; text-align: right; font-size: 1rem; color: #d32f2f;">↺ אפס הגדרות</button>
-</div>
-
-<script>
-// Toggle accessibility menu
-document.getElementById('accessibility-btn').addEventListener('click', function() {
-    const menu = document.getElementById('accessibility-menu');
-    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-});
-
-// Close menu when clicking outside
-document.addEventListener('click', function(event) {
-    const menu = document.getElementById('accessibility-menu');
-    const btn = document.getElementById('accessibility-btn');
-    if (!menu.contains(event.target) && !btn.contains(event.target)) {
-        menu.style.display = 'none';
-    }
-});
-
-// Font size functions
-let currentFontSize = 100;
-function increaseFontSize() {
-    currentFontSize += 10;
-    document.body.style.fontSize = currentFontSize + '%';
-    localStorage.setItem('fontSize', currentFontSize);
-}
-
-function decreaseFontSize() {
-    currentFontSize -= 10;
-    document.body.style.fontSize = currentFontSize + '%';
-    localStorage.setItem('fontSize', currentFontSize);
-}
-
-// High contrast
-function toggleHighContrast() {
-    document.body.classList.toggle('high-contrast');
-    const isActive = document.body.classList.contains('high-contrast');
-    localStorage.setItem('highContrast', isActive);
-    
-    if (isActive) {
-        document.body.style.filter = 'contrast(1.5)';
-    } else {
-        document.body.style.filter = '';
-    }
-}
-
-// Grayscale
-function toggleGrayscale() {
-    document.body.classList.toggle('grayscale');
-    const isActive = document.body.classList.contains('grayscale');
-    localStorage.setItem('grayscale', isActive);
-    
-    if (isActive) {
-        document.body.style.filter = 'grayscale(100%)';
-    } else {
-        document.body.style.filter = '';
-    }
-}
-
-// Reset all
-function resetAccessibility() {
-    currentFontSize = 100;
-    document.body.style.fontSize = '100%';
-    document.body.style.filter = '';
-    document.body.classList.remove('high-contrast', 'grayscale');
-    localStorage.removeItem('fontSize');
-    localStorage.removeItem('highContrast');
-    localStorage.removeItem('grayscale');
-}
-
-// Load saved preferences
-window.addEventListener('load', function() {
-    const savedFontSize = localStorage.getItem('fontSize');
-    if (savedFontSize) {
-        currentFontSize = parseInt(savedFontSize);
-        document.body.style.fontSize = currentFontSize + '%';
-    }
-    
-    if (localStorage.getItem('highContrast') === 'true') {
-        document.body.classList.add('high-contrast');
-        document.body.style.filter = 'contrast(1.5)';
-    }
-    
-    if (localStorage.getItem('grayscale') === 'true') {
-        document.body.classList.add('grayscale');
-        document.body.style.filter = 'grayscale(100%)';
-    }
-});
-
-// Hover effect on accessibility button
-const accBtn = document.getElementById('accessibility-btn');
-accBtn.addEventListener('mouseenter', function() {
-    this.style.transform = 'scale(1.1)';
-    this.style.boxShadow = '0 6px 20px rgba(0,102,204,0.5)';
-});
-accBtn.addEventListener('mouseleave', function() {
-    this.style.transform = 'scale(1)';
-    this.style.boxShadow = '0 4px 15px rgba(0,0,0,0.3)';
-});
+    <!-- UserWay Accessibility Widget -->
+    <script>
+(function(d){
+var s = d.createElement("script");
+s.setAttribute("data-account", "xGwDj6LJ4X");
+s.setAttribute("src", "https://cdn.userway.org/widget.js");
+(d.body || d.head).appendChild(s);
+})(document);
 </script>
+<noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
 
 </body>
 </html>
