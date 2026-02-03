@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>המדריך לשיח רגשי - האריה שידע שהוא אריה</title>
+    <meta name="description" content="מדריך מקיף להורים לשיח עם ילדים על ביטחון עצמי וזהות עצמית">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #fd79a8;
+        }
+        
+        h1 {
+            font-size: 2.8em;
+            color: #d63031;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #636e72;
+            margin-bottom: 30px;
+        }
+        
+        .download-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(253, 121, 168, 0.4);
+            transition: all 0.3s ease;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .download-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(253, 121, 168, 0.6);
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: #0984e3;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin-top: 15px;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #74b9ff;
+        }
+        
+        .part-header {
+            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0 30px 0;
+            text-align: center;
+        }
+        
+        .part-header h2 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .part-header p {
+            font-size: 1.15em;
+            margin: 0;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%);
+            border-radius: 15px;
+            border-right: 5px solid #fd79a8;
+        }
+        
+        h3 {
+            font-size: 1.8em;
+            color: #d63031;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .icon {
+            font-size: 1.1em;
+        }
+        
+        h4 {
+            font-size: 1.4em;
+            color: #0984e3;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            font-size: 1.15em;
+            margin-bottom: 15px;
+            line-height: 1.9;
+        }
+        
+        .question-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-right: 4px solid #fdcb6e;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .question-box p {
+            font-style: italic;
+            color: #2d3436;
+            margin: 0;
+        }
+        
+        .tip-box {
+            background: linear-gradient(135deg, #55efc4 0%, #00b894 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(0, 184, 148, 0.3);
+        }
+        
+        .tip-box h4 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .bonus-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-right: 5px solid #e17055;
+        }
+        
+        .bonus-intro {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .bonus-intro h3 {
+            color: white;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        .bonus-intro p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        
+        .activity {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+        
+        .activity h4 {
+            color: #e17055;
+            margin-top: 0;
+        }
+        
+        .parent-message {
+            background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(253, 121, 168, 0.4);
+        }
+        
+        .parent-message h3 {
+            color: white;
+            justify-content: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .parent-message p {
+            font-size: 1.2em;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+        
+        strong {
+            color: #d63031;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-right: 25px;
+        }
+        
+        li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .part-header h2 {
+                font-size: 1.8em;
+            }
+            
+            h3 {
+                font-size: 1.5em;
+            }
+            
+            .section, .bonus-section, .activity {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>המדריך לשיח רגשי 💬</h1>
+            <p class="subtitle">"האריה שידע שהוא אריה"</p>
+            <p style="font-size: 1.1em; color: #636e72;">
+                הורים יקרים, הסיפור של האריה הוא הזדמנות מצוינת לדבר עם הילדים על ביטחון עצמי<br>
+                ועל האופן שבו אנחנו רואים את עצמנו לעומת איך שאחרים רואים אותנו.
+            </p>
+            <a href="guide.pdf" class="download-button" download>
+                📥 הורידו את המדריך כ-PDF
+            </a>
+            <br>
+            <a href="index.html" class="back-link">⬅ חזרה לדף הראשי</a>
+        </div>
+
+        <!-- PART A: CONVERSATION -->
+        <div class="part-header">
+            <h2>חלק א': שיח עם הילדים 🗣️</h2>
+            <p>שלוש שאלות מרכזיות שיפתחו דיון משמעותי על הסיפור</p>
+        </div>
+
+        <div class="section">
+            <h3><span class="icon">🦁</span> 1. מבט פנימה: להיות האריה</h3>
+            <p>
+                האריה עובר מסע רגשי - מביטחון, דרך בלבול וספק, ועד לידיעה פנימית חזקה שהוא אכן אריה.
+                זה הזמן לדבר על איך ילדים מרגישים כשמישהו מטיל ספק בהם.
+            </p>
+            
+            <h4>💬 שאלות לשיח בזמן הקריאה:</h4>
+            <div class="question-box">
+                <p>"איך האריה הרגיש כשהשועל צחק עליו?"</p>
+            </div>
+            <div class="question-box">
+                <p>"מה עזר לאריה להאמין בעצמו שוב כשהוא הביט במעיין?"</p>
+            </div>
+            
+            <h4>💬 שאלות לשיח אחרי הקריאה:</h4>
+            <div class="question-box">
+                <p>"האם גם לך קרה פעם שמישהו אמר עליך משהו שלא הרגיש לך נכון?"</p>
+            </div>
+            <div class="question-box">
+                <p>"מה עוזר לך להיזכר מי אתה באמת? (חיבוק, הצלחה קטנה, להסתכל במראה)"</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3><span class="icon">🦊</span> 2. מבט אל האחר: להיות השועל או העכבר</h3>
+            <p>
+                התובנה המרכזית של הסיפור: <strong>"הם ראו בי את עצמם"</strong>. 
+                זה שיעור חשוב באמפתיה - לפעמים אנשים רואים אותנו דרך המשקפיים שלהם, 
+                ולא דרך מי שאנחנו באמת.
+            </p>
+            
+            <h4>💬 שאלות לשיח:</h4>
+            <div class="question-box">
+                <p>"למה לדעתך השועל אמר לאריה שהוא שועל? האם הוא ניסה להעליב, או שהוא פשוט ראה את העולם דרך העיניים שלו?"</p>
+            </div>
+            <div class="question-box">
+                <p>"אם מישהו אומר לך משהו לא נעים, האם זה אומר שזה נכון? או שזה פשוט מה שהוא מרגיש באותו רגע?"</p>
+            </div>
+            
+            <div class="tip-box">
+                <h4>💡 נקודה חשובה להורים:</h4>
+                <p style="margin: 0;">
+                    כשילד מבין שמישהו אחר מדבר מתוך ה"עולם שלו", קל לו יותר לא להיפגע. 
+                    זה מחזק את היכולת שלו לא לקחת דברים באופן אישי.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3><span class="icon">❤️</span> 3. מבט של אהבה: "אני רואה את עצמי בעיניים של אהבה"</h3>
+            <p>
+                בסוף הסיפור, האריה אומר משפט מרגש: <strong>"אני רואה את כל מה שיש בי בעיניים של אהבה"</strong>. 
+                זה הזמן לעזור לילד לזהות את החוזקות שלו.
+            </p>
+            
+            <h4>💬 שאלה לשיח:</h4>
+            <div class="question-box">
+                <p>"מה אתה אוהב בעצמך? תגיד לי דבר אחד שהוא 'האריה שבך' - משהו שאתה חזק בו או גאה בו."</p>
+            </div>
+            
+            <div class="tip-box">
+                <h4>🌟 טיפ קטן להורים:</h4>
+                <p style="margin: 0;">
+                    המסר החזק ביותר בספר הוא שהאריה לא היה צריך "להוכיח" לשועל שהוא אריה. 
+                    הוא פשוט ידע את זה. תנו לילדים להרגיש שהידיעה הפנימית שלהם היא הכוח הכי גדול שיש להם.
+                </p>
+            </div>
+        </div>
+
+        <!-- PART B: BONUS ACTIVITIES -->
+        <div class="bonus-intro">
+            <h3><span class="icon">🎨</span> חלק ב': רוצים להעמיק?</h3>
+            <p>פעילויות בונוס להורים שרוצים להמשיך את השיח בצורה יצירתית ומשחקית</p>
+        </div>
+
+        <div class="bonus-section">
+            <div class="activity">
+                <h4>🎨 פעילות 1: ציור "מעיין העוצמות שלי"</h4>
+                <p><strong>מה עושים?</strong></p>
+                <p>
+                    צייר עיגול כחול גדול (זה המעיין). בתוך העיגול, ציייר את עצמך, וכתוב או ציייר 
+                    את כל התכונות החזקות שלך - דברים שאתה טוב בהם, תכונות אופי יפות, דברים שאתה אוהב בעצמך.
+                </p>
+                <p><strong>המסר:</strong></p>
+                <p>
+                    "כמו שהאריה הלך למעיין כדי להיזכר מי הוא, הציור הזה הוא המעיין שלך. 
+                    כשתרגיש מבולבל או שמישהו יגיד לך משהו לא נעים - תוכל להסתכל במעיין שלך ולהיזכר בָּאמת."
+                </p>
+            </div>
+
+            <div class="activity">
+                <h4>👓 פעילות 2: משחק "משקפי הקסם"</h4>
+                <p><strong>איך משחקים?</strong></p>
+                <p>
+                    הסבירו לילד: "לכל אחד יש משקפיים שקופים דרכם הוא רואה את העולם. 
+                    השועל הרכיב 'משקפי שועל', לכן כל מה שראה נראה לו כמו שועל!"
+                </p>
+                <p><strong>השאלה לילד:</strong></p>
+                <p>
+                    "איזה משקפיים אתה מרכיב היום? משקפיים של שמחה שרואים שהכל אפשרי? 
+                    או אולי משקפיים של חשש שגורמים להכל להיראות קצת מפחיד?"
+                </p>
+                <p><strong>המטרה:</strong></p>
+                <p>
+                    ללמד את הילד שהראייה שלנו סובייקטיבית - ושאנחנו יכולים לבחור להחליף משקפיים!
+                </p>
+            </div>
+
+            <div class="activity">
+                <h4>🤔 פעילות 3: "אמת או מחשבה?"</h4>
+                <p><strong>כלי מעולם ה-CBT (טיפול קוגניטיבי):</strong></p>
+                <p>
+                    כשהאריה שומע שהוא עכבר, הוא עוצר ושואל - "האם זו האמת?"
+                </p>
+                <p><strong>תרגול עם הילד:</strong></p>
+                <p>
+                    "אם ילד בגן אומר לך 'אתה לא יודע לשחק', בוא נבדוק כמו האריה - 
+                    האם זו האמת המוחלטת, או שזו רק המחשבה של הילד השני?"
+                </p>
+                <p><strong>התובנה:</strong></p>
+                <p>
+                    לא כל מה שאומרים לנו הוא "אמת" - לפעמים זו רק "דעה" או "מחשבה".
+                </p>
+            </div>
+        </div>
+
+        <!-- PARENT MESSAGE -->
+        <div class="parent-message">
+            <h3>💝 מסר להורה: "להיות המעיין של ילדינו"</h3>
+            <p>
+                לפעמים הילדים שלנו פוגשים 'שועלים' ו'עכברים' שמערערים להם את הביטחון.
+            </p>
+            <p>
+                <strong>התפקיד שלנו כהורים הוא להיות המעיין הצלול עבורם</strong> – המקום שבו הם יכולים 
+                להביט ולהשתקף כפי שהם באמת: אהובים, חזקים וייחודיים.
+            </p>
+            <p>
+                כשאנחנו מאמינים בהם ללא ספק, אנחנו עוזרים להם לבנות את ה'קול הפנימי' 
+                שיגיד להם: <strong>"אולי הם טועים, כי אני יודע שאני אריה."</strong>
+            </p>
+        </div>
+
+        <div class="header" style="border-top: 3px solid #fd79a8; border-bottom: none; padding-top: 30px; margin-top: 50px;">
+            <a href="guide.pdf" class="download-button" download>
+                📥 הורידו את המדריך כ-PDF
+            </a>
+            <br>
+            <a href="index.html" class="back-link">⬅ חזרה לדף הראשי</a>
+        </div>
+    </div>
+</body>
+</html>
