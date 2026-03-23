@@ -6,19 +6,19 @@
     <title>הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה | ספר ילדים על זהות וביטחון עצמי</title>
     <meta name="description" content="ספר ילדים עם מסר עמוק על זהות, ביטחון עצמי ואהבה עצמית.">
     <style>
-        /* כאן נמצא כל ה-CSS המקורי שלך - שמרתי עליו בדיוק כפי שהוא */
+        /* CSS המקורי שלך */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Assistant', 'Heebo', 'Rubik', sans-serif; background: #FAF7F2; color: #5A4A3A; line-height: 1.8; font-size: 18px; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
-        /* הוספת הבאנר העליון בפורמט שמתאים לעיצוב שלך */
-        .promo-banner { background-color: #D4AF37; color: white; text-align: center; padding: 10px; font-weight: bold; position: sticky; top: 0; z-index: 1001; font-size: 0.9rem; border-bottom: 2px solid rgba(0,0,0,0.1); }
-        
-        /* שאר העיצוב המקורי שלך ממשיך מכאן ללא שינוי */
-        section { padding: 80px 0; }
-        .hero { background: linear-gradient(135deg, #F5F2ED 0%, #EBF3E8 100%); text-align: center; padding: 100px 20px 60px; }
-        .price-card { background: white; padding: 40px; border-radius: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); max-width: 500px; margin: 0 auto; border: 2px solid #D4AF37; }
-        .cta-button { display: inline-block; padding: 18px 40px; background: #D4AF37; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2rem; width: 100%; margin-bottom: 12px; transition: 0.3s; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .promo-banner { background-color: #D4AF37; color: white; text-align: center; padding: 10px; font-weight: bold; position: sticky; top: 0; z-index: 1001; font-size: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        section { padding: 60px 0; border-bottom: 1px solid #E6DFD1; }
+        .hero { background: linear-gradient(135deg, #F5F2ED 0%, #EBF3E8 100%); text-align: center; padding: 80px 20px 60px; border-bottom: none; }
+        .hero h1 { font-size: 3rem; color: #6B8E6F; margin-bottom: 15px; }
+        .hero-image { max-width: 500px; width: 100%; margin: 30px auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .quote-card { background: white; padding: 30px; border-radius: 20px; margin: 20px 0; border-right: 6px solid #D4AF37; box-shadow: 0 5px 15px rgba(0,0,0,0.03); }
+        .price-card { background: white; padding: 40px; border-radius: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); max-width: 550px; margin: 0 auto; border: 2px solid #D4AF37; text-align: center; }
+        .cta-button { display: inline-block; padding: 18px 40px; background: #D4AF37; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.25rem; width: 100%; margin-bottom: 15px; transition: 0.3s; box-shadow: 0 10px 20px rgba(212,175,55,0.2); }
+        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(212,175,55,0.3); }
         footer { background: #6B8E6F; color: white; padding: 60px 0; text-align: center; }
         .sticky-order-btn { position: fixed; bottom: 30px; right: 30px; z-index: 1000; background: #D4AF37; color: white; width: 85px; height: 85px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.85rem; font-weight: bold; text-decoration: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
     </style>
@@ -31,9 +31,48 @@
     <section class="hero">
         <div class="container">
             <h1>הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה</h1>
-            <p>כי ביטחון עצמי מתחיל בהקשבה פנימית 💛</p>
-            <p style="margin-top: 15px; font-weight: bold; color: #6B8E6F;">הצטרפו לאלפי ילדים שכבר גילו את האריה שבתוכם!</p>
-            <img src="hero-cover-illustration.jpg" alt="כריכת הספר" style="max-width: 100%; height: auto; border-radius: 20px; margin-top: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+            <p style="font-size: 1.4rem;">כי ביטחון עצמי מתחיל בהקשבה פנימית 💛</p>
+            <p style="margin-top: 15px; font-weight: bold; color: #6B8E6F;">הצטרפו למאות הילדים שכבר גילו את האריה שבתוכם!</p>
+            <img src="hero-cover-illustration.jpg" alt="כריכת ספר האריה שידע שהוא אריה" class="hero-image">
+            <div style="margin-top: 20px;">
+                <a href="#about" class="cta-button" style="width: auto; padding: 12px 30px; font-size: 1rem; background: #6B8E6F;">📖 לקריאה על הספר</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 style="color: #6B8E6F; margin-bottom: 25px;">📖 על הספר</h2>
+            <p><strong>הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה הוא סיפור עדין ומעצים על זהות עצמית.</strong></p>
+            <p style="margin-top: 15px;">אריה צעיר יוצא לטיול ביער. מפגש עם חיות אחרות גורם לו לפקפק במי שהוא יודע שהוא, ומוביל אותו למסע פנימי של הקשבה, גילוי והתחזקות.</p>
+            <p style="margin-top: 15px;">זהו סיפור שמראה לילדים שהדרך להבין מי אנחנו באמת עוברת דרך הלב שלנו – ולא דרך עיני הסביבה.</p>
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="activities.html" style="color: #D4AF37; font-weight: bold; text-decoration: none;">🎨 לצפייה בפעילויות והעשרה מהספר</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide-promo" style="background: #EBF3E8;">
+        <div class="container" style="text-align: center;">
+            <h2 style="color: #6B8E6F;">💬 איך להפוך את הקריאה לשיח משמעותי?</h2>
+            <p style="margin: 20px 0;"><strong>קבלו מדריך חינם</strong> עם שאלות לדיון ופעילויות שיעזרו לכם לדבר עם הילדים על ביטחון עצמי וזהות.</p>
+            <a href="guide.html" class="cta-button" style="width: auto; background: #6B8E6F;">📖 לצפייה במדריך באתר</a>
+        </div>
+    </section>
+
+    <section id="excerpts">
+        <div class="container">
+            <h2 style="color: #6B8E6F; text-align: center; margin-bottom: 30px;">✨ מתוך הספר</h2>
+            <div class="quote-card">"הַכִּירוּ אֶת הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה. הוּא גָּר לְיַד יַעַר, בְּשָׂדוֹת רְחָבִים..."</div>
+            <div class="quote-card">"הַשּׁוּעָל צִחְקֵק וְאָמַר: 'אֲתָה אַרְיֵה? מָה פִּתְאוֹם?! אַתָּה בִּכְלָל שׁוּעָל!'"</div>
+            <div class="quote-card">"תֵּן לָאוֹר שֶׁבְּךָ לְהָאִיר לְךָ כָּל יוֹם, תֵּן לָאַהֲבָה שֶׁבְּלִבְּךָ לְהַדְרִיךְ אוֹתְךָ בְּכָּל מָקוֹם."</div>
+        </div>
+    </section>
+
+    <section id="author">
+        <div class="container">
+            <h2 style="color: #6B8E6F;">✍️ על המחברת</h2>
+            <p style="margin-top: 20px;">הספר נכתב מתוך התמודדות אישית מחזקת ומתוך רצון עמוק לעזור לילדים להתמודד עם אתגרים רגשיים וחברתיים. זהו סיפור שמזמין ילדים והורים להביט בעצמם באור חדש, מחזק ומעצים.</p>
         </div>
     </section>
 
@@ -52,9 +91,8 @@
 
                 <div style="margin-top: 25px;">
                     <a href="נא_להדביק_לינק_מ_GROW_לספר_אחד" class="cta-button">📚 להזמנת ספר בודד</a>
-                    <a href="נא_להדביק_לינק_מ_GROW_לזוג_ספרים" class="cta-button" style="background: #6B8E6F;">🎁 להזמנת 2 ספרים + משלוח חינם</a>
+                    <a href="נא_להדביק_לינק_מ_GROW_לזוג_ספרים" class="cta-button" style="background: #6B8E6F; box-shadow: 0 10px 20px rgba(107,142,111,0.2);">🎁 להזמנת 2 ספרים + משלוח חינם</a>
                 </div>
-                <p style="margin-top: 15px; font-size: 0.85rem; text-align: center; color: #8C7B6A;">⚡ מוגבל ל-500 ראשונים במחיר השקה!</p>
             </div>
         </div>
     </section>
