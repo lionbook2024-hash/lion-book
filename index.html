@@ -544,6 +544,12 @@
             .sticky-order-btn a {
                 font-size: 0.85rem;
             }
+            
+            /* הסתר את כל QR קודים במובייל */
+            img[src*="qr-"],
+            img.qr-code-image {
+                display: none !important;
+            }
         }
     </style>
     
@@ -864,7 +870,7 @@
                 
                 <div style="margin-top: 30px;">
                     <p style="margin-bottom: 15px;">או סרקו את הקוד:</p>
-                    <img src="qr-code.png" alt="QR Code להזמנת הספר במחיר השקה" style="max-width: 200px; border-radius: 15px;">
+                    <img src="qr-code.png" alt="QR Code להזמנת הספר במחיר השקה" style="max-width: 200px; border-radius: 15px;" class="qr-code-image">
                 </div>
                 
                 <div style="margin-top: 30px;">
