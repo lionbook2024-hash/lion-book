@@ -495,13 +495,13 @@
             position: fixed;
             bottom: 100px;
             right: 20px;
-            background: linear-gradient(135deg, #196F3D 0%, #145A32 100%);
+            background: linear-gradient(135deg, #D4AF37 0%, #B8960C 100%);
             padding: 12px 20px;
             z-index: 9997;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
             border-radius: 8px;
-            border: 2px solid #D4AF37;
-            animation: slideIn 0.5s ease;
+            border: 2px solid #fff;
+            animation: slideIn 0.5s ease, pulse 3s ease-in-out 2s infinite;
             max-width: 180px;
         }
 
@@ -517,7 +517,7 @@
 
         .sticky-order-btn:hover {
             transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
             transition: all 0.3s ease;
         }
 
@@ -530,6 +530,24 @@
                 transform: translateX(0);
                 opacity: 1;
             }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); }
+            50% { transform: scale(1.06); box-shadow: 0 6px 22px rgba(212, 175, 55, 0.65); }
+            100% { transform: scale(1); box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); }
+        }
+
+        @keyframes pulseGuide {
+            0% { box-shadow: 0 6px 25px rgba(72, 201, 176, 0.4); }
+            50% { box-shadow: 0 8px 30px rgba(72, 201, 176, 0.7); }
+            100% { box-shadow: 0 6px 25px rgba(72, 201, 176, 0.4); }
+        }
+
+        @keyframes pulseGreen {
+            0% { box-shadow: 0 6px 20px rgba(25, 111, 61, 0.3); }
+            50% { box-shadow: 0 8px 28px rgba(25, 111, 61, 0.6); }
+            100% { box-shadow: 0 6px 20px rgba(25, 111, 61, 0.3); }
         }
 
         /* Responsive adjustments */
@@ -633,11 +651,13 @@
             <div class="about-content">
                 <h3>הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה</h3>
                 
-                <p>בוקר אחד יוצא אריה צעיר לטיול ביער. הוא פוגש שועל ועכבר ומציע להם לשחק יחד – אבל הם צוחקים ומשאירים אותו לבדו: <strong>"אתה בכלל לא אריה!"</strong></p>
+                <p>בוקר אחד יוצא אריה צעיר לטיול ביער. הוא פוגש שועל ועכבר ומציע להם לשחק יחד. אבל תשובתם מפתיעה אותו: <strong>"אתה בכלל לא אריה!"</strong></p>
 
                 <p>בתחילה הוא חושב שהם פשוט טועים. אבל כשזה קורה פעם שנייה, מתחילים הספקות לכרסם: <em>"אולי אני הטועה? אולי כולם צודקים?"</em></p>
 
-                <p>הספקות האלה הם שמניעים אותו למעיין הקרוב, לפגוש שם את עצמו. ומה שהוא מגלה במים נשאר איתו מכאן והלאה.</p>
+                <p>הספקות האלה הם שמובילים אותו אל המעיין הקרוב. ושם, מול השתקפותו במים, הוא מגלה משהו שילך איתו לתמיד.</p>
+
+                <p>כי כולנו מכירים את זה - מילים שנאמרות מבחוץ שעלולות לעורר בלב של הילד בלבול, ספק והשוואה. הספר עוזר לו להתמודד עם זה מתוך מקום של ביטחון.</p>
 
                 <p><strong>זהו סיפור שמזמין ילדים והורים להביט בעצמם באור חדש, מחזק ומעצים. הוא מזכיר לנו שככל שנכיר ונאהב את מי שאנחנו, נפתח חוסן פנימי שיאפשר לנו להישאר בטוחים בעצמנו בכל מצב.</strong></p>
                 
@@ -649,6 +669,7 @@
             </div>
 
             <div class="gallery">
+                <p style="text-align: center; color: #4A7C59; font-weight: 600; font-size: 1.05rem; margin-bottom: 15px;">הציצו בכמה עמודים מהספר:</p>
                 <img src="image1.jpg" alt="איור מהספר - אריה ביער">
                 <img src="image2.jpg" alt="איור מהספר - אריה עם חיות">
                 <img src="image3.jpg" alt="איור מהספר - אריה מגלה את עצמו">
@@ -672,7 +693,7 @@
                 </p>
                 
                 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
-                    <a href="guide.html" target="_blank" class="cta-button" style="font-size: 1.2rem; background: linear-gradient(135deg, #5DD9C1 0%, #48C9B0 100%); color: white; box-shadow: 0 6px 25px rgba(72, 201, 176, 0.4); border: 2px solid #48C9B0; animation: none;" aria-label="לצפייה במדריך המלא - נפתח בחלון חדש">
+                    <a href="guide.html" target="_blank" class="cta-button" style="font-size: 1.2rem; background: linear-gradient(135deg, #5DD9C1 0%, #48C9B0 100%); color: white; box-shadow: 0 6px 25px rgba(72, 201, 176, 0.5); border: 2px solid #3AB5A0; animation: pulseGuide 4s ease-in-out infinite;" aria-label="לצפייה במדריך המלא - נפתח בחלון חדש">
                         📖 לצפייה במדריך באתר <span style="font-size: 0.8em;">↗</span>
                     </a>
                     
@@ -694,19 +715,24 @@
             <h2>💝 למה להזמין את הספר?</h2>
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <h3>💪 ביטחון עצמי פנימי</h3>
+                    <h3>💪 ביטחון עצמי שבא מבפנים</h3>
+                    <p>שלא תלוי במה שאחרים אומרים</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>👂 הקשבה ללב ולא רק לסביבה</h3>
+                    <h3>👂 להקשיב ללב</h3>
+                    <p>ולא רק לקולות שמסביב</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>🤝 כלים להתמודד עם מילים והערות מבחוץ</h3>
+                    <h3>🤝 כלים אמיתיים</h3>
+                    <p>להתמודד עם מילים והערות מהסביבה</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>💬 פתיחת שיח רגשי בין הורים לילדים</h3>
+                    <h3>💬 שיחה שפותחת לב</h3>
+                    <p>הספר מזמין שיח בין הורים לילדים</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>🏡 חוויית קריאה משפחתית ומקרבת</h3>
+                    <h3>🎨 איורים צבעוניים ומרהיבים</h3>
+                    <p>שמחיים כל רגע בסיפור</p>
                 </div>
             </div>
         </div>
@@ -829,7 +855,7 @@
                     <img src="author-circle.png" alt="תמונת המחברת רוני קמפיאס">
                 </div>
                 
-                <p>רוני קמפיאס הוציאה לאור את ספרה הראשון, אשר נכתב מתוך התמודדות אישית מחזקת ומתוך רצון עמוק לעזור לילדים (והורים) להתמודד עם אתגרים רגשיים וחברתיים.</p>
+                <p>רוני קמפיאס כתבה את ספרה הראשון מתוך חוויה אישית עמוקה. כמי שחוותה נידוי חברתי בילדות, היא מכירה מקרוב את הפצעים שחוויה כזו מותירה. כשראתה את בתה מתמודדת עם סיטואציה דומה בגן, החליטה לפעול. אז החלה לספר לה סיפור שיבנה לה חוסן מבפנים. הסיפור עבד. ומאותו רגע ידעה שהיא חייבת להוציאו לעולם, מתוך רצון להעניק לילדים כלי שיגן עליהם, כדי שמילים של אחרים בסביבה החברתית לא יערערו אותם.</p>
             </div>
         </div>
     </section>
@@ -859,7 +885,7 @@
                 <!-- Two CTA Buttons -->
                 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 30px 0;">
                     <div style="text-align: center; flex: 1; min-width: 280px; max-width: 400px;">
-                        <a href="https://pay.grow.link/086991300a1ce6010c120d10d41c5567-MjkzOTA5NQ" class="cta-button" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #196F3D 0%, #145A32 100%); color: white; border: 2px solid #0E6027; display: block; padding: 20px; font-size: 1.3rem; box-shadow: 0 6px 20px rgba(25, 111, 61, 0.3);" aria-label="רכישת ספר בודד עם משלוח - נפתח בחלון חדש">
+                        <a href="https://pay.grow.link/086991300a1ce6010c120d10d41c5567-MjkzOTA5NQ" class="cta-button" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #196F3D 0%, #145A32 100%); color: white; border: 2px solid #0E6027; display: block; padding: 20px; font-size: 1.3rem; box-shadow: 0 6px 20px rgba(25, 111, 61, 0.3); animation: pulseGreen 3s ease-in-out infinite;" aria-label="רכישת ספר בודד עם משלוח - נפתח בחלון חדש">
                             🦁 ספר + משלוח
                         </a>
                         <p style="margin-top: 10px; font-size: 0.95rem; color: #5A4A3A;">
@@ -869,7 +895,7 @@
                     </div>
                     
                     <div style="text-align: center; flex: 1; min-width: 280px; max-width: 400px;">
-                        <a href="https://pay.grow.link/84b8efca5c96dfdd3694de350b55fb5a-MzIzNTE5OQ" class="cta-button" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #196F3D 0%, #145A32 100%); color: white; border: 2px solid #0E6027; display: block; padding: 20px; font-size: 1.3rem; box-shadow: 0 6px 20px rgba(25, 111, 61, 0.4);" aria-label="רכישת ספרים עם משלוח חינם - נפתח בחלון חדש">
+                        <a href="https://pay.grow.link/84b8efca5c96dfdd3694de350b55fb5a-MzIzNTE5OQ" class="cta-button" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #196F3D 0%, #145A32 100%); color: white; border: 2px solid #0E6027; display: block; padding: 20px; font-size: 1.3rem; box-shadow: 0 6px 20px rgba(25, 111, 61, 0.4); animation: pulseGreen 3s ease-in-out 1.5s infinite;" aria-label="רכישת ספרים עם משלוח חינם - נפתח בחלון חדש">
                             🎁 רכישת ספרים • משלוח חינם
                             <div style="font-size: 0.85rem; margin-top: 8px; opacity: 0.95;">
                                 *2 ספרים ומעלה
@@ -1011,10 +1037,7 @@
 
     <!-- Sticky Order Button -->
     <div class="sticky-order-btn">
-        <a href="#order" aria-label="אני רוצה ספר - מעבר לסקשן רכישה" style="color: white;">🦁<br>אני רוצה<br>ספר!</a>
-        <div style="font-size: 0.75rem; color: white; margin-top: 8px; text-align: center; line-height: 1.3;">
-            🔒 מאובטח
-        </div>
+        <a href="#order" aria-label="להזמנה עכשיו - מעבר לסקשן רכישה" style="color: #2A1F10;">🦁<br>להזמנה<br>עכשיו!</a>
     </div>
 
     <!-- UserWay Accessibility Widget -->
