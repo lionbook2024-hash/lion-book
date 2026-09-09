@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הצהרות חיוביות לילדים - הָאַרְיֵה שֶׁיָּדַע שֶׁהוּא אַרְיֵה</title>
+    <meta name="description" content="הצהרות חיוביות לחיזוק הביטחון העצמי של הילדים - לחזרה יומיומית, בהשראת הספר האריה שידע שהוא אריה.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Assistant', 'Heebo', 'Rubik', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+            background: #FAF7F2;
+            color: #5A4A3A;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #F5F2ED 0%, #EBF3E8 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #4A7C59;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #4A7C59;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #6F4E37;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #5DD9C1 0%, #48C9B0 100%);
+            color: white;
+            padding: 14px 34px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(72, 201, 176, 0.3);
+            border: 2px solid #48C9B0;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px) scale(1.03);
+            background: linear-gradient(135deg, #6FE5CD 0%, #5DD9C1 100%);
+        }
+
+        main {
+            padding: 50px 20px;
+        }
+
+        .intro {
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #6F4E37;
+        }
+
+        .group {
+            margin-bottom: 50px;
+        }
+
+        .group-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            border-radius: 18px;
+            padding: 26px 22px;
+            text-align: center;
+            font-size: 1.15rem;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px) scale(1.02);
+        }
+
+        /* Color themes per group */
+        .theme-gold .group-title { color: #B8860C; }
+        .theme-gold .card { background: linear-gradient(135deg, #FFF8E1 0%, #FFF3CD 100%); color: #7A5C0E; border: 2px solid #F0D98C; }
+
+        .theme-blue .group-title { color: #2A5A6A; }
+        .theme-blue .card { background: linear-gradient(135deg, #EAF6FB 0%, #DDF0F7 100%); color: #24586A; border: 2px solid #AEDCE9; }
+
+        .theme-orange .group-title { color: #C1563E; }
+        .theme-orange .card { background: linear-gradient(135deg, #FFEFEA 0%, #FFE0D6 100%); color: #A8482F; border: 2px solid #F5C0AC; }
+
+        .theme-green .group-title { color: #4A7C59; }
+        .theme-green .card { background: linear-gradient(135deg, #EFF8F0 0%, #E1F2E4 100%); color: #3E6B4B; border: 2px solid #B9DCC0; }
+
+        .theme-purple .group-title { color: #6A1B9A; }
+        .theme-purple .card { background: linear-gradient(135deg, #F6EEFA 0%, #EEDFF5 100%); color: #5B1885; border: 2px solid #D9B8EA; }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #E8F5E9 0%, #F1F8F2 100%);
+            border-radius: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section p {
+            font-size: 1.15rem;
+            color: #4A7C59;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #196F3D 0%, #145A32 100%);
+            color: white;
+            padding: 16px 40px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 2px solid #0E6027;
+            box-shadow: 0 6px 20px rgba(25, 111, 61, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #8B7355;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.9rem; }
+            .cards-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>✨ הצהרות חיוביות לילדים ✨</h1>
+        <p>לחזק את הקול הפנימי, יום אחרי יום</p>
+        <a href="index.html" class="back-btn">🦁 חזרה לעמוד הראשי</a>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <p class="intro">
+            למילים שאנחנו אומרים לעצמנו יש כוח עצום. ריכזנו כאן הצהרות חיוביות, בהשראת הספר "האריה שידע שהוא אריה" - לחזור עליהן יחד עם הילדים, שוב ושוב, עד שהן הופכות לקול פנימי אמיתי.
+        </p>
+
+        <div class="group theme-gold">
+            <div class="group-title">🦁 הקול הפנימי שלי - כשהלב מבולבל</div>
+            <div class="cards-grid">
+                <div class="card">אני יודע מי אני, וזה הכוח הגדול ביותר שלי.</div>
+                <div class="card">הלב שלי תמיד אומר לי את האמת.</div>
+                <div class="card">אני מיוחד, ויש לי מקום חשוב בעולם.</div>
+            </div>
+        </div>
+
+        <div class="group theme-blue">
+            <div class="group-title">🛡️ מגן האריה שלי - כשאחרים אומרים משהו לא נעים</div>
+            <div class="cards-grid">
+                <div class="card">אני בוחר אילו מילים להכניס אל הלב שלי.</div>
+                <div class="card">לפעמים אחרים רואים רק את עצמם - ואני נשאר אריה.</div>
+                <div class="card">מילים של אחרים חולפות כמו עננים, אבל השמש שלי תמיד נשארת.</div>
+            </div>
+        </div>
+
+        <div class="group theme-orange">
+            <div class="group-title">✨ פשוט להיות אני - בכל בוקר מול המראה</div>
+            <div class="cards-grid">
+                <div class="card">אני אוהב את עצמי בדיוק כמו שאני.</div>
+                <div class="card">אני חזק, אמיץ ונהדר.</div>
+                <div class="card">היום אני בוחר להסתכל על הכול בעיניים של אהבה.</div>
+            </div>
+        </div>
+
+        <div class="group theme-green">
+            <div class="group-title">🌱 כשהכול חדש - התחלות ומעברים</div>
+            <div class="cards-grid">
+                <div class="card">גם במקום חדש, אני נשאר אני.</div>
+                <div class="card">מותר לי לפחד קצת מדברים חדשים, ובכל זאת להיות אמיץ.</div>
+                <div class="card">אני לא צריך שכולם יאהבו אותי - מספיק שאני אוהב את עצמי.</div>
+                <div class="card">כל התחלה לוקחת זמן, ואני נותן לעצמי את הזמן הזה.</div>
+            </div>
+        </div>
+
+        <div class="group theme-purple">
+            <div class="group-title">🌟 אומץ לנסות</div>
+            <div class="cards-grid">
+                <div class="card">מותר לי לטעות - זה חלק מללמוד ולגדול.</div>
+                <div class="card">אני מנסה, גם כשזה קצת מפחיד.</div>
+                <div class="card">כל פעם שאני מנסה, אני נהיה חזק יותר.</div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <p>רוצים עוד כלים לשיח רגשי עם הילדים?</p>
+            <a href="guide.html" class="buy-btn">📖 למדריך המלא</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 רוני קמפיאס | כל הזכויות שמורות | האריה שידע שהוא אריה</p>
+</footer>
+
+</body>
+</html>
